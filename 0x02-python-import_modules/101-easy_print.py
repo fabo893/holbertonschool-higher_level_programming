@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-__import__("duh")
+__import__("print")
