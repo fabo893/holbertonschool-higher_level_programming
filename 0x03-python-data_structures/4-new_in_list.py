@@ -6,7 +6,5 @@ def new_in_list(my_list, idx, element):
     elif idx > len(my_list):
         return sec_list
     else:
-        for i in my_list:
-            if i == idx:
-                sec_list[idx] = element
-                return sec_list
+        sec_list[idx] = element
+        return sec_list
