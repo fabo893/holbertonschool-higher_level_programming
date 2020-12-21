@@ -2,6 +2,8 @@
 def best_score(a_dictionary):
     if a_dictionary is None:
         return None
+    elif len(a_dictionary) == 0:
+        return None
     else:
         score = 0
         idx = 0
