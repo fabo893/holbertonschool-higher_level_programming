@@ -2,7 +2,7 @@
 def multiply_by_2(a_dictionary):
     if len(a_dictionary) == 0:
         tmp = {}
-        return 0
+        return tmp
     else:
         tmp = {}
         for x in a_dictionary:
