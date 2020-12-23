@@ -16,12 +16,12 @@ def roman_to_int(roman_string):
             if st2[idx] == 'X' and st2[idx - 1] == 'I':
                 su -= 2
             if st2[idx] == 'L' and st2[idx - 1] == 'X':
-                su -= 10
+                su -= 20
             if st2[idx] == 'C' and st2[idx - 1] == 'X':
-                su -= 10
+                su -= 20
             if st2[idx] == 'D' and st2[idx - 1] == 'C':
-                su -= 100
+                su -= 200
             if st2[idx] == 'M' and st2[idx - 1] == 'C':
-                su -= 100
+                su -= 200
         idx += 1
     return su
