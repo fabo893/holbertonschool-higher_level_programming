@@ -4,6 +4,7 @@
 This is the module documentation
 """
 
+
 class Square:
     """Empty class called Square"""
     pass
