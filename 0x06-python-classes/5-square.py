@@ -16,7 +16,7 @@ class Square:
 
     def my_print(self):
         """Print the square"""
-        if size == 0:
+        if self.__size == 0:
             print()
         else:
             for x in range(0, self.__size):
@@ -25,13 +25,13 @@ class Square:
                 print()
 
     @property
-    """Getter for size"""
     def size(self):
+        """Getter for size"""
         return self.__size
 
     @size.setter
-    """Setter for size"""
     def size(self, value):
+        """Setter for size"""
         if type(value) is not int:
             raise TypeError("size must be an integer")
         if value < 0:
