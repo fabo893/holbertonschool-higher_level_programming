@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
+    div = 0
     try:
-        if type(a) is int and type(b) is int:
-            print("Inside result: {}".format(a / b))
-            return a / b
+        div = a / b
     except:
-        c = None
-        print("Inside result: {}".format(c))
-        return c
+        div = None
+    finally:
+        print("Inside resul: {}".format(div))
+    return div
