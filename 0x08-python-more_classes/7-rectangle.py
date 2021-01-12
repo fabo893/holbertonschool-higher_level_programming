@@ -19,13 +19,13 @@ class Rectangle:
         """Method that print the rectangle"""
         if self.area == 0:
             return ""
-        return ((str(self.print_symbol) * self.width + '\n') * 
+        return ((str(self.print_symbol) * self.width + '\n') *
                 self.height)[0:-1]
 
     def __repr__(self):
         """Method __repr__"""
         return "{}({}, {})".format(self.__class__.__name__,
-                                    self.width, self.height)
+                                   self.width, self.height)
 
     def __del__(self):
         """Method to delete"""
