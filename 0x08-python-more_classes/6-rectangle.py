@@ -8,7 +8,6 @@ class Rectangle:
     """This is a rectangle class"""
     number_of_instances = 0
 
-    """Method __init__"""
     def __init__(self, width=0, height=0):
         """Method __init__"""
         self.width = width
@@ -28,6 +27,7 @@ class Rectangle:
 
     def __del__(self):
         """Method to delete"""
+        self.__class__.number_of_instances -= 1
         print("Bye rectangle...")
 
     def area(self):
