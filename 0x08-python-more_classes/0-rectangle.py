@@ -5,4 +5,5 @@ This is a module documentation
 
 
 class Rectangle:
+    """An empty class"""
     pass
