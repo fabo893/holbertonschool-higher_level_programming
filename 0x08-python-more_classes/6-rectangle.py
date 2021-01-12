@@ -5,6 +5,9 @@ This is a module documentation
 
 
 class Rectangle:
+    """This is a rectangle class"""
+    number_of_instances = 0
+
     """Method __init__"""
     def __init__(self, width=0, height=0):
         """Method __init__"""
