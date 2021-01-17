@@ -1,0 +1,35 @@
+Add Integer Test Text
+======================
+
+Import function
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+
+Case One:
+	>>> add_integer(1, 2)
+	3
+
+
+Case Two:
+	>>> add_integer(100, -2)
+	98
+
+
+Case Three:
+	>>> add_integer(2)
+	100
+
+
+Case Four:
+	>>> add_integer(100.3, -2)
+	98
+
+Case Five:
+	>>> add_integer(10.5, 11.3)
+	21
+
+Case Six:
+	>>> add_integer(-3, -4)
+	-7
+
+
