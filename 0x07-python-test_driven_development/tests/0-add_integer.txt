@@ -24,9 +24,11 @@ Case Four:
 	>>> add_integer(100.3, -2)
 	98
 
+
 Case Five:
 	>>> add_integer(10.5, 11.3)
 	21
+
 
 Case Six:
 	>>> add_integer(-3, -4)
@@ -45,3 +47,10 @@ Case Eight:
 	Traceback (most recent call last):
 	...
 	OverflowError: cannot convert float infinity to integer
+
+
+Case Nine:
+	>>> add_integer("hey", 2)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
