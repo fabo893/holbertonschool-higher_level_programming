@@ -1,0 +1,31 @@
+Text Indentation Test Text
+==========================
+
+Import function
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+Case One:
+	>>> text_indentation("Hey, girl")
+	Hey, girl
+
+
+Case Two:
+	>>> text_indentation("Good. Well")
+	Good.
+	<BLANKLINE>
+	Well
+
+
+Case Three:
+	>>> text_indentation(1)
+	Traceback (most recent call last):
+	...
+	TypeError: text must be a string
+
+
+Case Four:
+	>>> text_indentation()
+	Traceback (most recent call last):
+	...
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
