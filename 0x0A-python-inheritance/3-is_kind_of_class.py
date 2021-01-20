@@ -4,6 +4,8 @@
 
     Module to check an instance
 """
+
+
 def is_kind_of_class(obj, a_class):
     """Check if the object is an instance of
 
