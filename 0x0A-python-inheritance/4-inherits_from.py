@@ -6,7 +6,7 @@
 
 def inherits_from(obj, a_class):
     """Documentation"""
-    if a_class is not bool and isinstance(obj, a_class):
-            return True
-    else:
-        return False
+    if type(obj) is a_class:
+            return False
+    if issubclass(type(obj), a_class):
+        return True
