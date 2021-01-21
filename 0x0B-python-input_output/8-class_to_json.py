@@ -7,6 +7,11 @@
 
 
 def class_to_json(obj):
-    """Return the dictionary description
+    """Return the dictionary description for JSON serialization
+
+        Args:
+            obj - object
+
+        Return - a dictionary
     """
     return obj.__dict__
