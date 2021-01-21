@@ -11,7 +11,7 @@ def write_file(filename="", text=""):
 
         Args:
             filename - the name to the file
-            text - the text to be write 
+            text - the text to be write
 
         Return - the number of characters written
     """
