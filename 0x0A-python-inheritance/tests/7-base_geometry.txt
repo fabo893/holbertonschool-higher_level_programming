@@ -1,0 +1,29 @@
+>>> baseg = __import__('7-base_geometry').BaseGeometry
+
+>>> bg = baseg()
+
+>>> bg.integer_validator("num", 2)
+
+
+>>> bg.integer_validator("two", 0)
+	Traceback (most recent call last):
+	...
+	ValueError: two must be greater than 0
+
+
+>>> bg.integer_validator("three", -1)
+	Traceback (most recent call last):
+	...
+	ValueError: three must be greater than 0
+
+
+>>> bg.integer_validator("four", "four")
+	Traceback (most recent call last):
+	...
+	TypeError: four must be an integer
+
+
+>>> bg.integer_validator("five", 3.14)
+	Traceback (most recent call last):
+	...
+	TypeError: five must be an integer
