@@ -18,7 +18,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """Method to print a string"""
-        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__, 
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
                 self.id, self.__x, self.__y, self.__width, self.__height)
 
     def area(self):
@@ -35,6 +35,20 @@ class Rectangle(Base):
             for ii in range(0, self.__width):
                 print("#", end="")
             print()
+
+    def update(self, *args):
+        """Method to assign an argument to each attribute"""
+        for i, j in enumerate(args):
+            if i == 0:
+                self.id = j
+            elif i == 1:
+                self.__width = j
+            elif i == 2:
+                self.__height = j
+            elif i == 3:
+                self.__x = j
+            else:
+                self.__y = j
 
     @property
     def width(self):
