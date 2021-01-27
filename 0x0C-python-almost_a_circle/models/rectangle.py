@@ -18,8 +18,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """Method to print a string"""
-        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
-                self.id, self.__x, self.__y, self.__width, self.__height)
+        return "[{}] ({}) {}/{} - {}/{}".format(
+                self.__class__.__name__, self.id,
+                self.__x, self.__y, self.__width, self.__height)
 
     def area(self):
         """Method that return the area"""
