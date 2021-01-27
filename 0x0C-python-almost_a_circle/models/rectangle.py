@@ -27,7 +27,7 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-        """Method to display the Rectangle"""
+        """Method to display thet Rectangle"""
         for a in range(0, self.__y):
             print()
         for i in range(0, self.__height):
@@ -37,19 +37,32 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Method to assign an argument to each attribute"""
-        for i, j in enumerate(args):
-            if i == 0:
-                self.id = j
-            elif i == 1:
-                self.__width = j
-            elif i == 2:
-                self.__height = j
-            elif i == 3:
-                self.__x = j
-            else:
-                self.__y = j
+        if len(args) > 0:
+            for i, j in enumerate(args):
+                if i == 0:
+                    self.id = j
+                elif i == 1:
+                    self.__width = j
+                elif i == 2:
+                    self.__height = j
+                elif i == 3:
+                    self.__x = j
+                else:
+                    self.__y = j
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                if key == "height":
+                    self.__height = value
+                if key == "width":
+                    self.__width = value
+                if key == "x":
+                    self.__x = value
+                if key == "y":
+                    self.__y = value
 
     @property
     def width(self):
