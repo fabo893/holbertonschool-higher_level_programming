@@ -7,6 +7,7 @@
 
 
 class Base:
+    """Base class documentation"""
 
     __nb_objects = 0
 
