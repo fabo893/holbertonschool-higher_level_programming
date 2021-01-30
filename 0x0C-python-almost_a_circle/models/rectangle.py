@@ -64,6 +64,16 @@ class Rectangle(Base):
                 if key == "y":
                     self.__y = value
 
+    def to_dictionary(self):
+        """Return dict"""
+        dic = {}
+        dic['id'] = self.id
+        dic['width'] = self.width
+        dic['height'] = self.height
+        dic['x'] = self.x
+        dic['y'] = self.y
+        return dic
+
     @property
     def width(self):
         """Getter for width"""
