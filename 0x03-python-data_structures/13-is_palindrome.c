@@ -91,7 +91,7 @@ int is_palindrome(listint_t **head)
 	for (size = 0; ls != NULL; size++)
 		ls = ls->next;
 	if (size == 1)
-		return (0);
+		return (1);
 
 	res = palin_helper(head, size);
 
