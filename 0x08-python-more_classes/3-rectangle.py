@@ -13,7 +13,7 @@ class Rectangle:
 
     def __str__(self):
         """Method that print the rectangle"""
-        if self.area == 0:
+        if self.__width == 0 or self.__height == 0:
             return ""
         return (('#' * self.width + '\n') * self.height)[0:-1]
 
