@@ -8,8 +8,8 @@ class Rectangle:
     """Method __init__"""
     def __init__(self, width=0, height=0):
         """Method __init__"""
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     def __str__(self):
         """Method that print the rectangle"""
