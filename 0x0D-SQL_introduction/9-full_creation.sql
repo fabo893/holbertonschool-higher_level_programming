@@ -1,12 +1,12 @@
 -- Create a table 'second_table'
 CREATE TABLE IF NOT EXISTS second_table (
-	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	id INT,
 	name VARCHAR(256),
 	score INT(3));
 
-	INSERT INTO `second_table` (`name`, `score`)
+	INSERT INTO `second_table` (`id`, `name`, `score`)
 	VALUES
-	('John', 10),
-	('Alex', 3),
-	('Bob', 14),
-	('George', 8);
+	(1, 'John', 10),
+	(2, 'Alex', 3),
+	(3, 'Bob', 14),
+	(4, 'George', 8);
