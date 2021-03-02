@@ -1,5 +1,5 @@
 -- Create a table called 'first_table'
 CREATE TABLE IF NOT EXISTS first_table (
-	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	id INT,
 	name VARCHAR (256)
 	);
