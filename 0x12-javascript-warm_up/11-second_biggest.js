@@ -7,11 +7,11 @@ if (process.argv.length === 2) {
   let count = 2;
   const ar = [];
   while (count < process.argv.length) {
-	  ar.push(process.argv[count]);
-	  count++;
+    ar.push(process.argv[count]);
+    count++;
   }
   ar.sort(function (a, b) {
-	  return a - b;
+    return a - b;
   });
   console.log(ar[ar.length - 2]);
 }
