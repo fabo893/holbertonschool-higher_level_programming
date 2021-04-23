@@ -22,10 +22,10 @@ int is_palindrome(listint_t **head)
 
 	half = size / 2;
 	ls = *head;
-	while (idx <= half)
+	while (idx < half)
 	{
 		ll = ls;
-		for (i = idx; i < size - 1; i++)
+		for (i = idx; i < (size - 1); i++)
 			ll = ll->next;
 		if (ls->n != ll->n)
 			return (0);
