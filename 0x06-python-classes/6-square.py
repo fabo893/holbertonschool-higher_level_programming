@@ -9,7 +9,7 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """Method __init__"""
         self.size = size
-        self.__position = position
+        self.position = position
 
     def area(self):
         """Method that return the area"""
@@ -56,8 +56,9 @@ class Square:
     @position.setter
     def position(self, value):
         """Setter for position"""
-        pos = self.__position
-        st = "position must be a tuple of 2 positive integers"
-        if type(pos) is not tuple:
+        if type(value) is tuple and len(pos) is 2 and\
+            type(pos[0]) is int and type(pos[1]) is int and les and les1:
+                self.__position = value
+        else:
+            st = "position must be a tuple of 2 positive integers"
             raise TypeError(st)
-        self.__position = value
